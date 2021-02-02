@@ -7,19 +7,229 @@ button{
     color:#0065FC; 
 }
 
+#HeaderPage {
+    width:100%;
+    display: flex;
+    flex-direction:column;
+   
+
+}
+
+#logo{
+    align-self:flex-start;
+}
+
+
+
+
+
+
+
+/*########
+    MENU 
+    #######*/
+
+
+.menu{
+    align-self: flex-end;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+
+    width: 25%;
+}
+
+#FormulaireRecherche{
+    margin-left:10px;
+  
+}
+
+
+#FormulaireRecherche h1{
+    margin: 0;
+}
+
+#FormulaireRecherche p{
+    margin: 0;
+}
+
+#RechercheVille{
+    height:2.1em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction:row;
+}
+
+.fa-map-marker-alt{
+    background-color: #ccbdbd;
+    border-top-left-radius: 0.7em;
+    border-bottom-left-radius: 0.7em;
+    width: 0 auto;
+    font-size: 1.1em;
+    padding: 0.4em;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+#villecherchee{
+margin:0;
+    font-size: 1.2em;
+}
+
+
+#BoutonRechercher{
+    height: 100%;
+    margin:0;
+    border-top-right-radius: 0.7em;
+    border-bottom-right-radius: 0.7em;
+    color:white;
+    font-size:0.8em;
+    background-color:#0065FC;
+    padding:0.6em;
+    box-sizing: border-box;
+}
+
+
+/*########
+    FILTRES 
+    #######*/
+
+#FiltresGeneral
+{
+    display:flex;
+    flex-direction: row;    
+    margin-bottom:1.5em;
+    width:100%;
+
+}
+
+@media (max-width: 600px) {
+    #FiltresGeneral {
+        flex-direction: column;
+    }
+  }
+
+#Filtretitre{
+    width:5em;
+
+    font-weight: bold;
+   
+    align-content: center;
+}
+
+#Filtretitre h3{
+    margin:0;
+    font-size: 1.5em;
+}
+
+#Filtres
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: start;
+
+    align-content: center;
+    flex-wrap: wrap;
+
+    width: 70%;
+
+
+    box-sizing: border-box;
+
+}
+
+
+.btnfiltre{
+    display:flex;
+    width:12em;
+    height:3em;
+    flex-direction:row;
+    padding:0;
+    margin: 0;
+    margin-right:1em;
+    margin-bottom: 1em;
+    border-radius:2em;
+
+    border: 1px solid #DEEBFF;
+    background-color: white;
+}
+
+/*Bouton animaux + long */
+
+#btnani{
+    width:18em;
+}
+
+/*Bouton famille + court */
+
+#btnfam{
+    width:10em;
+}
+
+.ifiltre{
+    background-color: #DEEBFF ;
+    border-radius: 50%;
+    width:2.75em;
+    height:2.75em;
+  
+    padding-top: 1em;
+
+    text-align: center;
+    box-sizing: border-box;
+    margin:0;
+
+}
+
+
+.btnfiltre p{
+    width:85%;
+    height:100%;
+    color:black;
+
+    padding-top: 0.5em;
+
+    text-align: center;
+    box-sizing: border-box;
+    border-radius:2em;
+    font-size: 1.3em;
+    font-weight: bold;
+    flex-wrap: nowrap;
+    background-color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*########
+    HEBERGEMENT 
+    #######*/
+
 
 #HebergementsGeneral{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width:100%;
-    border : 1px solid red;
+
+}
+
+#HeaderHebergement h3{
+    padding-left:1.3em;
 }
 
 #HebergementsRecherche{
 
     width:60%;
-    border : 1px solid yellow;
+
     padding-left: 10px;
     border-radius: 25px;
     background: #DEEBFF ;
@@ -31,57 +241,58 @@ button{
     flex-wrap: wrap;
     justify-content:space-around;
     margin:0;     
-    border : 1px solid purple;  
+
+}
+
+article{
+    margin-bottom: 0.8em;
+
 }
 
 
-article{
-    border : 1px solid green;
-    margin-bottom: 20px;
-    min-width: 180px;
-    width: 17vw;
-    height:11vw;
+figure{   
+    margin:0;
+    width: 17em;
+    height:11em;
+    min-width: 300px;
+    min-height: 160px;
     display:flex;
     flex-direction:column;
     justify-content:space-around;
-    border-radius: 25px;
+    border-radius: 2em;
     background: white ;
+    padding:0.4em;
+
+    box-shadow: 0.1em 0.1em 0.05em 0.1em grey;
 }
-
-
-
-picture{
-
-}
-
 
 .imghebergement{
 
     margin:0;
     padding:0; 
     width:100%; 
-    height: 65%; 
+    height: 7em; 
 
     object-fit: cover;
 
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;  
+    border-top-left-radius: 0.9em;
+    border-top-right-radius: 0.9em;  
 }
 
 .TitreHebergement{
     font-weight: bold;
-    margin-left:10px;
+    margin-left:0.2em;
 }
 
 .tarif{
     margin:0;
-    margin-left:10px;
+    margin-left:0.2em;
 }
 
 .notation{
     display: flex;
     flex-direction:row;
-    margin-left:10px;
+    margin-left:0.2em;
     margin-bottom: 5px;
 }
 
@@ -89,10 +300,68 @@ picture{
 margin:0;
 }
 
-#HebergementsGeneral aside{
 
-    width:36%;
-    border : 1px solid blue;
-    border-radius: 25px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*########
+    POPULAIRE 
+    #######*/
+
+
+ aside{
+
+    width:25em;
+
+    border-radius: 0.9em;
     background: #DEEBFF ;
+}
+
+.populairecontenu{
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin:0;     
+    border : 1px solid purple;  
+}
+
+.articlepopulaire{
+    margin-left:1em;
+
+}
+
+.figurepopu
+{
+    margin-bottom: 0.8em;
+    min-width: 180px;
+    width: 20em;
+    height:8em;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    border-radius: 0.9em;
+    background: white ;
+}
+
+.imgpopulaire{
+    margin:0;
+    padding:0; 
+    width:15em; 
+    height: 100%; 
+
+    object-fit: cover;
+
+    border-top-left-radius: 0.9em;
+    border-bottom-left-radius: 0.9em;   
 }
