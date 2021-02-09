@@ -1,6 +1,8 @@
 body{
     font-family:'Raleway';   
-    font-size: 1vw;
+    font-size:10px;
+
+    margin:0 2% 0 2%;
 }
 
 button{
@@ -10,14 +12,21 @@ button{
 #HeaderPage {
     width:100%;
     display: flex;
-    flex-direction:column;
+    flex-direction:row;
+    justify-content:space-between;
+    margin-bottom:4em;
+    height: 10em;
+ 
+    padding:0;
    
 
+    
 }
 
 #logo{
-    align-self:flex-start;
-}
+   padding: 3em; 
+  
+} 
 
 
 
@@ -31,51 +40,84 @@ button{
 
 
 .menu{
-    align-self: flex-end;
+   /*  align-self: flex-end; */
+
     display: flex;
     flex-direction:row;
     justify-content: space-around;
-
+    align-items:center;
     width: 25%;
-}
-
-#FormulaireRecherche{
-    margin-left:10px;
+    height:100%;
   
 }
 
+.menu div{
+    height:100%;
+border:1px solid black;
+    font-size:2em;
+    margin-top:14px;
+    padding-top :5% ;
+    color:grey;
+}
+
+.menu a{
+    color:grey;
+  
+    height:1em;
+
+    text-decoration: none;
+}
+
+
+.menu div:hover{
+   
+    border:1px 0 0 0;
+    border-color: black;
+}
+
+#SousTitre p{
+    font-size:2em;
+    
+}
+
+/*#############
+RECHERCHE
+#############*/
 
 #FormulaireRecherche h1{
     margin: 0;
+    font-size: 2em;
 }
 
 #FormulaireRecherche p{
-    margin: 0;
+    margin: 0; 
 }
 
+
+
 #RechercheVille{
-    height:2.1em;
+    height:4em;
     margin-top: 1.5em;
-    margin-bottom: 1.5em;
+    margin-bottom: 3em;
     display: flex;
     flex-direction:row;
 }
 
 .fa-map-marker-alt{
-    background-color: #ccbdbd;
+    background-color: #F2F2F2;
     border-top-left-radius: 0.7em;
     border-bottom-left-radius: 0.7em;
     width: 0 auto;
-    font-size: 1.1em;
-    padding: 0.4em;
+    font-size: 1.8em;
+    padding: 0.6em;
     text-align: center;
     box-sizing: border-box;
 
 }
 
 #villecherchee{
-margin:0;
-    font-size: 1.2em;
+    margin:0;
+    font-size: 2em;
 }
 
 
@@ -85,10 +127,11 @@ margin:0;
     border-top-right-radius: 0.7em;
     border-bottom-right-radius: 0.7em;
     color:white;
-    font-size:0.8em;
+    font-size:1.5em;
     background-color:#0065FC;
     padding:0.6em;
     box-sizing: border-box;
+   
 }
 
 
@@ -102,6 +145,11 @@ margin:0;
     flex-direction: row;    
     margin-bottom:1.5em;
     width:100%;
+
+    align-items:center;
+
+    font-size: 20px;
+
 
 }
 
@@ -117,31 +165,34 @@ margin:0;
     font-weight: bold;
    
     align-content: center;
+
+  
 }
 
-#Filtretitre h3{
+#Filtretitre p{
     margin:0;
     font-size: 1.5em;
 }
 
 #Filtres
 {
+ 
     display:flex;
     flex-direction: row;
     justify-content: start;
 
-    align-content: center;
+    align-items: center;
     flex-wrap: wrap;
 
-    width: 70%;
-
+    width: 100%;
+    height:100%;
 
     box-sizing: border-box;
 
 }
 
 
-.btnfiltre{
+.filtrebtn{
     display:flex;
     width:12em;
     height:3em;
@@ -149,22 +200,24 @@ margin:0;
     padding:0;
     margin: 0;
     margin-right:1em;
-    margin-bottom: 1em;
-    border-radius:2em;
 
-    border: 1px solid #DEEBFF;
+    border-radius:2em;
+    border:3px solid #F2F2F2;
+
     background-color: white;
+
+    font-size: 22px;
 }
 
 /*Bouton animaux + long */
 
-#btnani{
+#filtrebtnani{
     width:18em;
 }
 
 /*Bouton famille + court */
 
-#btnfam{
+#filtrebtnfam{
     width:10em;
 }
 
@@ -183,7 +236,7 @@ margin:0;
 }
 
 
-.btnfiltre p{
+.filtrebtn p{
     width:85%;
     height:100%;
     color:black;
@@ -201,7 +254,13 @@ margin:0;
 }
 
 
+#Nombreslogements{
+    font-size:2em;
+    margin-bottom: 2.5em;
 
+    
+
+}
 
 
 
@@ -217,94 +276,123 @@ margin:0;
 #HebergementsGeneral{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     width:100%;
-
 }
 
-#HeaderHebergement h3{
+@media (max-width: 700px) {
+    #HebergementsGeneral {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+
+#HebergementHeader h3{
     padding-left:1.3em;
+    font-size: 2.8em;
+    font-weight: bold;
 }
 
 #HebergementsRecherche{
-
-    width:60%;
+    display: flex;
+    flex-direction:column;
+    width:65%;
 
     padding-left: 10px;
     border-radius: 25px;
-    background: #DEEBFF ;
+    background: #F2F2F2 ;
 }
 
 #HebergementsContenu{
     display:flex;
     flex-direction:row;
     flex-wrap: wrap;
-    justify-content:space-around;
-    margin:0;     
+    align-items:center;
+    justify-content:center;
+    margin:1.8%;    
+    width: 95%;
+    height: 95%;
+
 
 }
 
-article{
-    margin-bottom: 0.8em;
-
-}
-
-
-figure{   
+.HebergementArticle{
     margin:0;
-    width: 17em;
-    height:11em;
-    min-width: 300px;
-    min-height: 160px;
+    margin-bottom: 1.8em;
+    margin-right: 3.2em;
+    margin-left: 3.2em;
+    padding:0;
+   
+}
+
+
+.HebergementFigure{   
+    margin:0;
+    width: 30em;
+    height:23em;
+    min-width: 250px;
+    min-height: 180px;
     display:flex;
     flex-direction:column;
-    justify-content:space-around;
+    justify-content:flex-start;
     border-radius: 2em;
     background: white ;
-    padding:0.4em;
+    padding:0.5em;
 
-    box-shadow: 0.1em 0.1em 0.05em 0.1em grey;
+   
+
+    box-shadow: 0.1em 0.1em 0.5em 0.1em grey;
 }
 
-.imghebergement{
+.HebergementFigure figcaption{
+    margin-left: 3%;
+    height: 35%; 
+  
+}
 
+.HebergementImg{
+  
     margin:0;
     padding:0; 
+    margin-bottom:0.7em;
     width:100%; 
-    height: 7em; 
+    height: 60%; 
 
     object-fit: cover;
 
-    border-top-left-radius: 0.9em;
-    border-top-right-radius: 0.9em;  
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;  
 }
 
-.TitreHebergement{
+.HebergementTitre{
     font-weight: bold;
-    margin-left:0.2em;
+    margin-left:0.3em;
+    margin-top: 0.3em;
+    margin-bottom: 0.4em;
+    font-size: 1.8em;
 }
 
-.tarif{
+
+.HebergementTarif{
     margin:0;
-    margin-left:0.2em;
+    margin-left:0.3em;
+    margin-bottom: 0.3em;
+    font-size: 1.4em;
 }
 
-.notation{
+.HebergementNotation{
     display: flex;
     flex-direction:row;
-    margin-left:0.2em;
-    margin-bottom: 5px;
+    margin-left:0.3em;
+    margin-bottom: 0.4em;
+    font-size: 1.6em;
 }
 
-.etoile{
+.HebergementEtoile{
 margin:0;
+color:#0065FC;
 }
-
-
-
-
-
-
 
 
 
@@ -321,47 +409,261 @@ margin:0;
 
  aside{
 
-    width:25em;
+    width:30%;
+    min-width: 250px;
+    height:100%;
 
     border-radius: 0.9em;
-    background: #DEEBFF ;
+    background: #F2F2F2 ;
 }
 
-.populairecontenu{
+#PopulaireHeader h3{
+    padding-left:1.3em;
+    font-size: 2.8em;
+    font-weight: bold;
+}
+
+#PopulaireContenu{
     display:flex;
     flex-direction:column;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content:space-between;
     margin:0;     
-    border : 1px solid purple;  
-}
-
-.articlepopulaire{
-    margin-left:1em;
+    width:100%;
+    height: 100%;
 
 }
 
-.figurepopu
+.PopulaireArticle{ 
+margin:2em;
+padding:0;
+box-sizing: border-box;
+width:55em;
+height:18em;
+
+
+
+}
+
+.PopulaireFigure
 {
-    margin-bottom: 0.8em;
-    min-width: 180px;
-    width: 20em;
-    height:8em;
+    
+    padding:0.4em 0.4em;
+    box-sizing: border-box;
+    width:82%;
+    height:100%;
     display:flex;
     flex-direction:row;
-    justify-content:space-around;
+    justify-content:start;
     border-radius: 0.9em;
     background: white ;
+
+
+    box-shadow: 0.1em 0.1em 0.5em 0.1em grey;
 }
 
-.imgpopulaire{
-    margin:0;
-    padding:0; 
-    width:15em; 
+.PopulaireImg{
+
+    box-sizing: border-box;
+    width:40%; 
     height: 100%; 
 
     object-fit: cover;
 
     border-top-left-radius: 0.9em;
     border-bottom-left-radius: 0.9em;   
+}
+
+.PopulaireFigCaption{
+    margin-left: 1.3em;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+}
+
+.PopulaireTitre{
+    font-weight: bold;
+    font-size: 2.4em;
+    
+    margin-top: 0.6em;
+}
+
+.PopulaireTarif{
+    font-size: 1.8em;
+    margin-top: 0.4em;
+}
+
+.PopulaireNotation{
+    display: flex;
+    flex-direction:row;
+    margin-bottom: 5px;
+    margin-top: auto;
+}
+
+.PopulaireEtoile{
+    margin:0;
+    font-size: 1.6em;
+    color:#0065FC;
+}
+
+
+
+
+
+/*########
+ACTIVITES
+########*/
+
+
+
+#Activites{
+    margin-top: 4em;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+#ActiviteHeader h3{
+    font-weight: bold;
+    font-size: 2.8em;
+}
+
+#ActiviteContenu
+{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    width:100%;
+    height:55vh;
+
+    margin:0;
+    padding:0;
+}
+
+
+.ActiviteArticlecourt{
+    height: 36%;
+    width:22%;
+    margin:0;
+    padding:0;
+    box-shadow: 0.1em 0.1em 0.5em 0.1em grey;
+
+    border-radius: 2em;
+  
+
+}
+
+.ActiviteArticlemoyen{
+    height: 56%;
+    width:22%;
+    margin:0;
+    padding:0;
+    box-shadow: 0.1em 0.1em 0.5em 0.1em grey;
+
+    border-radius: 2em;
+    
+  
+
+}
+
+.ActiviteArticlelong
+{
+    height: 100%;
+    width:22%;
+    margin:0;
+    padding:0;
+    box-shadow: 0.1em 0.1em 0.5em 0.1em grey;
+
+    border-radius: 2em;
+
+}
+
+.ActiviteArticlelongFigure{
+    height:  100%;
+
+
+    margin:0;
+    padding:0;
+}
+
+
+.ActiviteArticlemoyenFigure{
+    height:  100%;
+
+    margin:0;
+    padding:0;
+}
+
+.ActiviteArticlecourtFigure{
+    height:  100%;
+
+    margin:0;
+    padding:0;
+}
+
+
+ .ActiviteImg{
+    margin:0;
+    padding:0;  
+    width:100%; 
+
+    object-fit: cover;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;  
+}
+
+.ActiviteArticlecourtFigure .ActiviteImg{
+    height: 65%; 
+}
+
+.ActiviteArticlemoyenFigure .ActiviteImg{
+    height: 79%; 
+}
+
+.ActiviteArticlelongFigure .ActiviteImg{
+    height: 86%; 
+}
+
+#Activite figcaption{
+    height: auto;
+}
+
+ #Activites h3{
+     font-weight: bold;
+     font-size: 22px;
+     padding-left:1em;
+ }
+
+
+/* 
+FOOTER */
+
+
+
+#FooterPage{
+    margin-top:5%;
+    padding:2.5em;
+    background-color: #F2F2F2;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-size: 24px;
+}
+
+#FooterPageText{
+    width:80%;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#FooterPage p{
+    margin: 0.5em 0 0 0;
+    padding:0;
 }
