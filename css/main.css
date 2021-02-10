@@ -2,7 +2,7 @@ body{
     font-family:'Raleway';   
     font-size:10px;
 
-    margin:0 2% 0 2%;
+    margin:0 4% 0 2%;
 }
 
 button{
@@ -14,22 +14,17 @@ button{
     display: flex;
     flex-direction:row;
     justify-content:space-between;
-    margin-bottom:4em;
-    height: 10em;
- 
-    padding:0;
    
+    margin:0 0 4em 0;
+    height: 10em;
 
-    
+    padding:0;    
 }
 
 #logo{
-   padding: 3em; 
-  
+   padding-top: 6em; 
+   height:55%;
 } 
-
-
-
 
 
 
@@ -40,67 +35,99 @@ button{
 
 
 .menu{
-   /*  align-self: flex-end; */
 
     display: flex;
     flex-direction:row;
     justify-content: space-around;
     align-items:center;
-    width: 25%;
+    width: 33%;
     height:100%;
+
+    margin:0;
+    padding:0;
   
 }
 
 .menu div{
     height:100%;
-border:1px solid black;
+    width:20em;
+
+
+    box-sizing: border-box;
     font-size:2em;
-    margin-top:14px;
-    padding-top :5% ;
-    color:grey;
+    margin-top:3px;
+    padding-bottom:3%;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content: flex-end;
 }
 
 .menu a{
     color:grey;
-  
-    height:1em;
+    font-weight: bold;
+   
+    width:100%;
+    text-decoration: none;    
+    text-align:center;
 
-    text-decoration: none;
 }
 
 
-.menu div:hover{
-   
-    border:1px 0 0 0;
-    border-color: black;
+
+
+
+#menuinscrire>a{
+    color:#0065FC;
+}
+
+#menuhebergement:hover, #menuactivite:hover{
+    box-sizing: border-box;
+    border-top:3px solid #0065FC;    
+}
+
+#menuhebergement:hover>a, #menuactivite:hover>a{
+    color:#0065FC;
+     
+}
+
+
+
+/*#############
+SOUS TITRE
+#############*/
+
+#SousTitre h1{
+    margin: 0;
+    font-size:3em;  
+    font-weight: 700;
 }
 
 #SousTitre p{
-    font-size:2em;
-    
+    font-size:2em; 
+    margin:0; 
+
 }
+
+
+
+
 
 /*#############
 RECHERCHE
 #############*/
 
-#FormulaireRecherche h1{
-    margin: 0;
-    font-size: 2em;
-}
-
-#FormulaireRecherche p{
-    margin: 0; 
-}
 
 
 
 #RechercheVille{
-    height:4em;
+    height:5.5em;
     margin-top: 1.5em;
-    margin-bottom: 3em;
+    margin-bottom: 4em;
     display: flex;
     flex-direction:row;
+
 }
 
 .fa-map-marker-alt{
@@ -108,8 +135,8 @@ RECHERCHE
     border-top-left-radius: 0.7em;
     border-bottom-left-radius: 0.7em;
     width: 0 auto;
-    font-size: 1.8em;
-    padding: 0.6em;
+    font-size: 2.4em;
+    padding: 0.6em 0.6em 0.2em 0.8em;
     text-align: center;
     box-sizing: border-box;
 
@@ -117,7 +144,9 @@ RECHERCHE
 
 #villecherchee{
     margin:0;
+    padding-left:0.8em;
     font-size: 2em;
+    border: 1px solid #F2F2F2;
 }
 
 
@@ -126,8 +155,9 @@ RECHERCHE
     margin:0;
     border-top-right-radius: 0.7em;
     border-bottom-right-radius: 0.7em;
+    border: 1px solid #F2F2F2;
     color:white;
-    font-size:1.5em;
+    font-size:2em;
     background-color:#0065FC;
     padding:0.6em;
     box-sizing: border-box;
@@ -148,7 +178,7 @@ RECHERCHE
 
     align-items:center;
 
-    font-size: 20px;
+    font-size: 16px;
 
 
 }
@@ -161,7 +191,7 @@ RECHERCHE
 
 #Filtretitre{
     width:5em;
-
+    font-size: 0.7em;
     font-weight: bold;
    
     align-content: center;
@@ -206,7 +236,12 @@ RECHERCHE
 
     background-color: white;
 
-    font-size: 22px;
+    font-size: 1.2em;
+}
+
+.filtrebtn p{
+    margin:0;
+    padding:0;
 }
 
 /*Bouton animaux + long */
@@ -227,7 +262,7 @@ RECHERCHE
     width:2.75em;
     height:2.75em;
   
-    padding-top: 1em;
+    padding-top: 0.85em;
 
     text-align: center;
     box-sizing: border-box;
@@ -253,13 +288,18 @@ RECHERCHE
 
 }
 
+.fa-info{
+    color:#0065FC
+}
+
+.fa-circle{
+    color: #f2f2f2;
+    
+}
 
 #Nombreslogements{
-    font-size:2em;
-    margin-bottom: 2.5em;
-
-    
-
+    font-size:1.8em;
+    margin-bottom: 2.5em; 
 }
 
 
@@ -289,9 +329,10 @@ RECHERCHE
 
 
 #HebergementHeader h3{
-    padding-left:1.3em;
+    padding-left:2.2em;
     font-size: 2.8em;
     font-weight: bold;
+    margin:1em 0 0 0;
 }
 
 #HebergementsRecherche{
@@ -310,18 +351,16 @@ RECHERCHE
     flex-wrap: wrap;
     align-items:center;
     justify-content:center;
-    margin:1.8%;    
-    width: 95%;
+    margin:0 1.8% 0 1.8%;    
+ 
     height: 95%;
 
 
 }
 
 .HebergementArticle{
-    margin:0;
-    margin-bottom: 1.8em;
-    margin-right: 3.2em;
-    margin-left: 3.2em;
+    margin:0 3em 1.8em 3em;
+
     padding:0;
    
 }
@@ -394,7 +433,13 @@ margin:0;
 color:#0065FC;
 }
 
-
+#afficherplus{
+    margin-top:0;
+    padding-top:0;
+    padding-left: 2.5em;
+    font-size: 2.1em;  
+    font-weight: bold;
+}
 
 
 
@@ -415,11 +460,31 @@ color:#0065FC;
 
     border-radius: 0.9em;
     background: #F2F2F2 ;
+
+    padding-bottom: 2%;
 }
 
+#PopulaireHeader{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    
+    margin:0;
+}
+
+
+
 #PopulaireHeader h3{
-    padding-left:1.3em;
+   
+  
     font-size: 2.8em;
+    font-weight: bold;
+}
+
+#PopulaireHeader i{
+    font-size: 2.8em;
+    margin-bottom: 0.2em;
     font-weight: bold;
 }
 
@@ -435,7 +500,7 @@ color:#0065FC;
 }
 
 .PopulaireArticle{ 
-margin:2em;
+margin:0 1em 4em 1em;
 padding:0;
 box-sizing: border-box;
 width:55em;
