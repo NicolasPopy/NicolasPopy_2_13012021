@@ -291,8 +291,11 @@ RECHERCHE
 }
 
 .fa-circle{
-    color: #f2f2f2;
-    
+    color: #f2f2f2;    
+}
+
+.fa-stack{
+    vertical-align: middle;
 }
 
 #Nombreslogements{
