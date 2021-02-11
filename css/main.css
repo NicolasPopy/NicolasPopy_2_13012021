@@ -192,11 +192,8 @@ RECHERCHE
 #Filtretitre{
     width:5em;
     font-size: 0.7em;
-    font-weight: bold;
-   
+    font-weight: bold;   
     align-content: center;
-
-  
 }
 
 #Filtretitre p{
@@ -206,7 +203,6 @@ RECHERCHE
 
 #Filtres
 {
- 
     display:flex;
     flex-direction: row;
     justify-content: start;
@@ -233,10 +229,12 @@ RECHERCHE
 
     border-radius:2em;
     border:3px solid #F2F2F2;
-
     background-color: white;
-
     font-size: 1.2em;
+}
+
+.filtrebtn:hover{
+    border:3px solid #0065FC;
 }
 
 .filtrebtn p{
@@ -304,7 +302,10 @@ RECHERCHE
 
 
 
-
+article a{
+    text-decoration: none; 
+    color: black; 
+}
 
 
 
