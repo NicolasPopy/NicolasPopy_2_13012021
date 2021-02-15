@@ -14,24 +14,56 @@ button{
     display: grid;
     grid-template-areas: "logo . menu insc";
     grid-template-rows: 100%;
-    grid-template-columns: 10% auto 20% 10%;
-   
+    grid-template-columns: 10% auto 30% 10%;
+ 
     margin:0 0 4em 0;
-    height: 10em;
-
+    height: 7em;
     padding:0;    
-
     font-size: 1vw;
-
 }
 
-#logo{
-   padding-top: 6em; 
-   height:55%;
-   margin-right:auto;
 
-   grid-area: logo;
-} 
+#logo{
+    padding-top: 4em; 
+    height:55%;
+    margin-right:auto;
+    grid-area: logo;
+ } 
+
+@media (max-width: 768px) {
+    #HeaderPage {
+        height: 12em;
+        padding:0;    
+        font-size: 1.8vw;
+
+        grid-template-columns: 50%  50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "logo insc" 
+        "menu menu";
+        justify-items:center;
+    }
+
+    #logo {
+        margin: 0;
+        padding:0;
+        
+        width:100%;
+        height:100%;
+        grid-area: logo;
+
+    }
+
+    #logo img{
+        
+        width:30%;
+        margin:0;
+        margin-left:5em;
+
+    }
+  }
+
+
 
 
 
@@ -42,6 +74,7 @@ button{
 
 #menunav{
     grid-area: menu;
+
 }
 
 .menu{ 
@@ -64,15 +97,13 @@ button{
     font-size:2em;
     margin-top:3px;  
 
-    margin-left : 1%;
-    margin-right : 1%;  
+    padding-left : 5%;
+    padding-right : 5%;  
     display:flex;
     flex-direction:column;
 
     justify-content: flex-end;
 
-    border:1px solid red;
-    
 }
 
 .menuitem a{
@@ -82,23 +113,24 @@ button{
     width:100%;
     text-decoration: none;    
     text-align:center;
-    border:1px solid blue;
     box-sizing: border-box;
 }
 
 
  #menuinscrire{  
        grid-area: insc;
+       border:1px solid green;      
  }
 
 
 #menuinscrire a{  
     color:#0065FC;
+    
 }
 
 #menuhebergement:hover, #menuactivite:hover{
     box-sizing: border-box;
-    border-top:3px solid #0065FC;    
+    border-top:6px solid #0065FC;    
 }
 
 #menuhebergement:hover>a, #menuactivite:hover>a{
@@ -106,7 +138,12 @@ button{
      
 }
 
-
+@media (max-width: 768px) {
+    #menuhebergement:hover, #menuactivite:hover{
+        box-sizing: border-box;
+        border-top:0px;
+        border-bottom:6px solid #0065FC; 
+}
 
 /*#############
 SOUS TITRE
@@ -114,7 +151,7 @@ SOUS TITRE
 
 #SousTitre h1{
     margin: 0;
-    font-size:3em;  
+    font-size:2.9em;  
     font-weight: 700;
 }
 
@@ -174,10 +211,22 @@ RECHERCHE
     font-size:2em;
     background-color:#0065FC;
     padding:0.6em;
-    box-sizing: border-box;
-   
+    box-sizing: border-box;   
 }
 
+
+.fa-search
+{display:none;}
+
+
+@media (max-width: 768px) {
+    .fa-search
+    {
+    display:block;
+    vertical-align:middle;
+}
+
+}
 
 /*########
     FILTRES 
@@ -197,7 +246,7 @@ RECHERCHE
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     #FiltresGeneral {
         flex-direction: column;
     }
@@ -339,7 +388,7 @@ article a{
 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     #HebergementsGeneral {
         flex-direction: column-reverse;
         align-items: center;
