@@ -1,7 +1,6 @@
 body{
     font-family:'Raleway';   
     font-size:10px;
-
     margin:0 2% 0 2%;
 }
 
@@ -28,7 +27,7 @@ button{
     height:55%;
     margin-right:auto;
     grid-area: logo;
- } 
+} 
 
 @media (max-width: 768px) {
     #HeaderPage {
@@ -54,16 +53,12 @@ button{
 
     }
 
-    #logo img{
-        
+    #logo img{        
         width:30%;
         margin:0;
         margin-left:5em;
-
     }
-  }
-
-
+}
 
 
 
@@ -101,9 +96,7 @@ button{
     padding-right : 5%;  
     display:flex;
     flex-direction:column;
-
     justify-content: flex-end;
-
 }
 
 .menuitem a{
@@ -117,10 +110,9 @@ button{
 }
 
 
- #menuinscrire{  
-       grid-area: insc;
-       border:1px solid green;      
- }
+#menuinscrire{  
+    grid-area: insc;
+}
 
 
 #menuinscrire a{  
@@ -135,7 +127,6 @@ button{
 
 #menuhebergement:hover>a, #menuactivite:hover>a{
     color:#0065FC;
-     
 }
 
 @media (max-width: 768px) {
@@ -143,7 +134,8 @@ button{
         box-sizing: border-box;
         border-top:0px;
         border-bottom:6px solid #0065FC; 
-}
+        }
+    }
 
 /*#############
 SOUS TITRE
@@ -157,18 +149,14 @@ SOUS TITRE
 
 #SousTitre p{
     font-size:2em; 
-    margin:0; 
-
+    margin:0;
 }
-
-
 
 
 
 /*#############
 RECHERCHE
 #############*/
-
 
 
 
@@ -185,7 +173,7 @@ RECHERCHE
     background-color: #F2F2F2;
     border-top-left-radius: 0.7em;
     border-bottom-left-radius: 0.7em;
-    width: 0 auto;
+ /*    width: 0 auto; */
     font-size: 2.4em;
     padding: 0.6em 0.6em 0.2em 0.8em;
     text-align: center;
@@ -210,21 +198,44 @@ RECHERCHE
     color:white;
     font-size:2em;
     background-color:#0065FC;
-    padding:0.6em;
+    padding-left: 1em;
+    padding-right:1em;
     box-sizing: border-box;   
 }
 
 
+
+
 .fa-search
-{display:none;}
+{
+    display:none;
+}
 
 
 @media (max-width: 768px) {
+
+    #RechercheVille{
+        margin-top:3.5em;
+    }
+
+    #villecherchee{
+        font-size: 4.8vw;
+
+    }
+
     .fa-search
     {
-    display:block;
-    vertical-align:middle;
-}
+        display:block;    
+    }
+
+    #BoutonRechercher{
+        border-top-left-radius: 0.7em;
+        border-bottom-left-radius: 0.7em;
+    }
+
+    #BoutonRechercher span{
+        display:none;
+    }
 
 }
 
@@ -238,19 +249,11 @@ RECHERCHE
     flex-direction: row;    
     margin-bottom:1.5em;
     width:100%;
-
     align-items:center;
-
     font-size: 16px;
-
-
 }
 
-@media (max-width: 768px) {
-    #FiltresGeneral {
-        flex-direction: column;
-    }
-  }
+
 
 #Filtretitre{
     width:5em;
@@ -275,9 +278,7 @@ RECHERCHE
 
     width: 100%;
     height:100%;
-
     box-sizing: border-box;
-
 }
 
 
@@ -322,13 +323,10 @@ RECHERCHE
     border-radius: 50%;
     width:2.75em;
     height:2.75em;
-  
     padding-top: 0.85em;
-
     text-align: center;
     box-sizing: border-box;
     margin:0;
-
 }
 
 
@@ -336,9 +334,7 @@ RECHERCHE
     width:85%;
     height:100%;
     color:black;
-
     padding-top: 0.5em;
-
     text-align: center;
     box-sizing: border-box;
     border-radius:2em;
@@ -346,8 +342,22 @@ RECHERCHE
     font-weight: bold;
     flex-wrap: nowrap;
     background-color: white;
-
 }
+
+
+@media (max-width: 768px) {
+    #FiltresGeneral {
+        flex-direction: column;
+        font-size: 3.3vw;
+        align-items:flex-start;
+    }
+
+    #Filtretitre{
+        margin-left: 0.8em;
+        margin-bottom: 0.5em;
+    }
+}
+
 
 .fa-info{
     color:#0065FC
@@ -366,14 +376,17 @@ RECHERCHE
     margin-bottom: 2.5em; 
 }
 
-
+@media (max-width: 768px) {
+    #Nombreslogements{
+        font-size:4vw;
+        margin-bottom: 2.5em; 
+    }
+}
 
 article a{
     text-decoration: none; 
     color: black; 
 }
-
-
 
 /*########
     HEBERGEMENT 
@@ -391,30 +404,26 @@ article a{
 @media (max-width: 768px) {
     #HebergementsGeneral {
         flex-direction: column-reverse;
+        justify-content: flex-start;  
         align-items: center;
     }
 }
-
 
 #HebergementHeader {
     padding-left:0.9em;
     font-size: 2em;
     font-weight: bold;
     margin:0.6em 0 0 0;
-
 }
 
 #HebergementsRecherche{
     display: flex;
-    flex-direction:column;
-    
+    flex-direction:column;    
     width:70%; 
-    height:100%;   
-
+    height:100%;
     padding-left: 0.6em;
     border-radius: 25px;
-    background: #F2F2F2 ;     
-
+    background: #F2F2F2 ;
 }
 
 #HebergementsContenu{
@@ -434,13 +443,11 @@ article a{
     padding:0;
     width: 20vw;   
     height:15vw;
-
 }
 
 
 .HebergementFigure{   
-    margin:0;
-   
+    margin:0;   
     width:100%;
     height:100%;
 
@@ -456,12 +463,10 @@ article a{
 
 .HebergementFigure figcaption{
     margin-left: 3%;
-    height: 40%; 
-  
+    height: 40%;   
 }
 
-.HebergementImg{
-  
+.HebergementImg{  
     margin:0;
     padding:0; 
     width:100%; 
@@ -507,40 +512,49 @@ article a{
     padding-top:0;
     padding-left: 0.6em;
     font-size: 2.1em;  
-    font-weight: bold;
-   
-    
+    font-weight: bold;    
 }
 
+@media (max-width: 768px) {
+
+    #HebergementsRecherche{
+        width:100%;
+        font-size: 2.5vw;
+    }
 
 
 
+    #HebergementsContenu{
+        flex-direction:column;
+    }
 
 
+    .HebergementArticle{
+        width: 100%;
+        height:50vw;
+    }
+}
 
 /*########
     POPULAIRE 
     #######*/
 
 
- aside{
-
+aside{
     width:27%;
     min-width: 250px;
     height:100%;
-
     border-radius: 0.9em;
     background: #F2F2F2 ;
-
     padding-bottom: 2%;
+  
 }
 
 #PopulaireHeader{
     display:flex;
     flex-direction:row;
     justify-content:space-around;
-    align-items:center;
-    
+    align-items:center;    
     margin:0;
 }
 
@@ -565,15 +579,13 @@ article a{
     margin:0;     
     width:100%;
     height: 100%;
-
 }
 
 .PopulaireArticle{ 
-margin:0 1.5em 3em 1.5em;
-padding:0;
-box-sizing: border-box;
-
-height:13em;
+    margin:0 1.5em 3em 1.5em;
+    padding:0;
+    box-sizing: border-box;
+    height:13em;
 }
 
 .PopulaireFigure
@@ -588,19 +600,14 @@ height:13em;
     justify-content:start;
     border-radius: 0.9em;
     background: white ;
-
-
     box-shadow: 0.1em 0.1em 0.5em 0.1em grey;
 }
 
 .PopulaireImg{
-
     box-sizing: border-box;
     width:40%; 
     height: 100%; 
-
     object-fit: cover;
-
     border-top-left-radius: 0.9em;
     border-bottom-left-radius: 0.9em;   
 }
@@ -614,13 +621,12 @@ height:13em;
 
 .PopulaireTitre{
     font-weight: bold;
-    font-size: 1.6em;
-    
+    font-size: 1.6em;    
     margin-top: 0.3em;
 }
 
 .PopulaireTarif{
-    font-size: 1.8em;
+    font-size: 1.6em;
     margin-top: 0.4em;
 }
 
@@ -638,8 +644,20 @@ height:13em;
 }
 
 
+@media (max-width: 768px) {
+    #HebergementsGeneral {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    aside{
+        width:100%;
+        font-size: 2.8vw;
+    }
 
-
+    .PopulaireArticle{ 
+        height:35vw;
+    }
+}
 
 /*########
 ACTIVITES
@@ -653,7 +671,6 @@ ACTIVITES
     flex-direction: column;
     justify-content: flex-start;
     font-size: 0.8vw;
-
 }
 
 
@@ -667,11 +684,9 @@ ACTIVITES
     display:flex;
     flex-direction:column;
     justify-content: space-between;
-
     flex-wrap: wrap;
     width:100%;
     height:30vw;
-
     margin:0;
     padding:0;
 }
@@ -683,7 +698,6 @@ ACTIVITES
     margin:0;
     padding:0;
     box-shadow: 0.1em 0.1em 0.5em 0.1em grey;
-
     border-radius: 2em;
   
 
@@ -695,11 +709,7 @@ ACTIVITES
     margin:0;
     padding:0;
     box-shadow: 0.1em 0.1em 0.5em 0.1em grey;
-
-    border-radius: 2em;
-    
-  
-
+    border-radius: 2em; 
 }
 
 .ActiviteArticlelong
@@ -709,15 +719,11 @@ ACTIVITES
     margin:0;
     padding:0;
     box-shadow: 0.1em 0.1em 0.5em 0.1em grey;
-
     border-radius: 2em;
-
 }
 
 .ActiviteArticlelongFigure{
     height:  100%;
-
-
     margin:0;
     padding:0;
 }
@@ -725,14 +731,12 @@ ACTIVITES
 
 .ActiviteArticlemoyenFigure{
     height:  100%;
-
     margin:0;
     padding:0;
 }
 
 .ActiviteArticlecourtFigure{
     height:  100%;
-
     margin:0;
     padding:0;
 }
@@ -742,8 +746,8 @@ ACTIVITES
     margin:0;
     padding:0;  
     width:100%; 
-
     object-fit: cover;
+    object-position: 50% 35%;
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;  
 }
@@ -764,22 +768,40 @@ ACTIVITES
     height: auto;
     display:flex;
     flex-direction:column;
-
-   
 }
 
- #Activites h4{
-     font-weight: bold;
-     font-size: 1.7em;
-     padding-left:1.1em;
-      padding-top: 0.8em;
-     margin: 0;
- }
+#Activites h4{
+    font-weight: bold;
+    font-size: 1.7em;
+    padding-left:1.1em;
+    padding-top: 0.8em;
+    margin: 0;
+}
 
+
+@media (max-width: 768px) {
+
+    #Activites{
+        font-size: 1.8vw;
+    }
+    #ActiviteContenu {
+        height:100%;
+    }
+
+    .ActiviteArticlecourt, .ActiviteArticlemoyen, .ActiviteArticlelong{
+        height: 40vw;
+        width:100%;
+        margin-bottom:5%;
+        padding:0;
+    }
+
+    .ActiviteArticlecourtFigure .ActiviteImg, .ActiviteArticlemoyenFigure .ActiviteImg, .ActiviteArticlelongFigure .ActiviteImg{
+        height:70%;
+    }
+}
 
 /* 
 FOOTER */
-
 
 
 #FooterPage{
@@ -788,17 +810,14 @@ FOOTER */
     margin-right: -2%;
     padding:2.5em 2.5em 2.5em 2.5em;
     background-color: #F2F2F2;
-
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-
     font-size: 1.5vw;
 }
 
 #FooterPageText{
     width:80%;
-
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -807,4 +826,25 @@ FOOTER */
 #FooterPage p{
     margin: 0.5em 0 0 0;
     padding:0;
+}
+
+
+@media (max-width: 768px) {
+
+
+#FooterPage {
+    font-size: 4.5vw;
+    padding:2.5em 1.5em 2.5em 1.5em;
+}
+
+    #FooterPageText{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    #FooterPageText div{
+        margin-bottom: 20%;
+    }
+
 }
