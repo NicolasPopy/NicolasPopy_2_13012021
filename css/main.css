@@ -174,8 +174,9 @@ SOUS TITRE
 
 #SousTitre h1{
     margin: 0;
-    font-size:2.9em;  
+    font-size:2.2em;  
     font-weight: 700;
+    margin:10% 2% 6% 2%;
 }
 
 #SousTitre p{
@@ -440,6 +441,7 @@ RECHERCHE
         font-size:1em;
         padding-top: 0.3em;
     } 
+}
 
 
 
@@ -466,6 +468,8 @@ article a{
         flex-direction: column-reverse;
         justify-content: flex-start;  
         align-items: center;
+        margin: 0 -2%;
+        width:104%;
     }
 }
 
@@ -585,12 +589,16 @@ article a{
     #HebergementsRecherche{
         width:100%;
         font-size: 2.5vw;
+        background-color:white;
+        border-radius:0;
+       
     }
 
 
 
     #HebergementsContenu{
         flex-direction:column;
+        margin : 0 4% 0 4%;
     }
 
 
@@ -717,6 +725,8 @@ aside{
     aside{
         width:100%;
         font-size: 2.8vw;
+        border-radius: 0;
+        
     }
 
     .PopulaireArticle{ 
@@ -851,6 +861,8 @@ ACTIVITES
     }
     #ActiviteContenu {
         height:100%;
+        width:96%;
+        padding:0 2% 0 2%;
     }
 
     .ActiviteArticlecourt, .ActiviteArticlemoyen, .ActiviteArticlelong{
@@ -861,7 +873,7 @@ ACTIVITES
     }
 
     .ActiviteArticlecourtFigure .ActiviteImg, .ActiviteArticlemoyenFigure .ActiviteImg, .ActiviteArticlelongFigure .ActiviteImg{
-        height:70%;
+        height:75%;
     }
 }
 
@@ -898,8 +910,8 @@ FOOTER */
 
 
 #FooterPage {
-    font-size: 4.5vw;
-    padding:2.5em 1.5em 2.5em 1.5em;
+    font-size: 4.7vw;
+    padding:0 1.5em 2.5em 1.5em;
 }
 
     #FooterPageText{
@@ -909,7 +921,7 @@ FOOTER */
     }
 
     #FooterPageText div{
-        margin-bottom: 20%;
+        margin-top: 15%;
     }
 
 }
