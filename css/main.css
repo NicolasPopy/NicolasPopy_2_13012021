@@ -685,10 +685,13 @@ aside{
     justify-content: flex-start;
 }
 
-.PopulaireTitre{
+
+.PopulaireFigCaption h5
+{
     font-weight: bold;
     font-size: 1.6em;    
     margin-top: 0.3em;
+    margin:0;
 }
 
 .PopulaireTarif{
