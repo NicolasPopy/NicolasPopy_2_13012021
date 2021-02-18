@@ -12,7 +12,7 @@ body{
     grid-template-areas: "logo . menu insc";
     grid-template-rows: 100%;
     grid-template-columns: 10% auto 30% 10%;
- 
+
     margin:0 0 4em 0;
     height: 7em;
     padding:0;    
@@ -144,7 +144,6 @@ body{
         font-size:1.2em;
     }
     
-   
 
     #menuinscrire a {
         text-align:right;
@@ -213,7 +212,7 @@ RECHERCHE
 
 #BoutonRechercher{
     height: 100%;
-    margin:0;
+    margin:0 0 0 -1%;
     border-top-right-radius: 0.7em;
     border-bottom-right-radius: 0.7em;
     border: 1px solid #F2F2F2;
@@ -250,6 +249,7 @@ RECHERCHE
     #BoutonRechercher{
         border-top-left-radius: 0.7em;
         border-bottom-left-radius: 0.7em;
+        margin-left:-5%;
     }
 
     #BoutonRechercher span{
@@ -680,6 +680,7 @@ aside{
 
 .PopulaireFigCaption{
     margin-left: 1.3em;
+    margin-top: 0.5em;
     display:flex;
     flex-direction:column;
     justify-content: flex-start;
@@ -690,7 +691,7 @@ aside{
 {
     font-weight: bold;
     font-size: 1.6em;    
-    margin-top: 0.3em;
+
     margin:0;
 }
 
