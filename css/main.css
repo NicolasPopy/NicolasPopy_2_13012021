@@ -226,10 +226,9 @@ RECHERCHE
 
 
 
-
 .fa-search
 {
-    display:none;
+    display:none !important ; 
 }
 
 
@@ -243,7 +242,7 @@ RECHERCHE
 
     .fa-search
     {
-        display:block;    
+        display:block !important;         
     }
 
     #BoutonRechercher{
@@ -571,8 +570,8 @@ article a{
 #HebergementFooter{
     margin-top:0;
     padding-top:0;
-    padding-left: 0.6em;
-    font-size: 2.1em;  
+    padding-left: 1.4em;
+    font-size: 1.8em;  
     font-weight: bold;    
 }
 
@@ -583,7 +582,6 @@ article a{
         font-size: 2.5vw;
         background-color:white;
         border-radius:0;
-       
     }
 
 
