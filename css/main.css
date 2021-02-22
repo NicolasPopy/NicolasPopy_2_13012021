@@ -163,14 +163,14 @@ SOUS TITRE
 
 #SousTitre h1{
     margin: 0;
-    font-size:2.2em;  
+    font-size:2.8em;  
     font-weight: 700;
-    margin:10% 2% 2% 2%;
+    margin:5% 2% 0% 0%;
 }
 
 #SousTitre p{
     font-size:2em; 
-    margin:2% 2% 2% 2%;
+    margin:0.5% 2% 2% 0%;
 }
 
 
@@ -446,6 +446,7 @@ article a{
     flex-direction: row;
     justify-content: space-between;  
     font-size: 0.8vw;
+    
 
 }
 
@@ -463,7 +464,7 @@ article a{
     padding-left:0.9em;
     font-size: 2em;
     font-weight: bold;
-    margin:0.6em 0 0 0;
+    margin:0.6em 0 0 0.2em;
 }
 
 #HebergementsRecherche{
@@ -471,8 +472,9 @@ article a{
     flex-direction:column;    
     width:70%; 
     height:100%;
+
     padding-left: 0.6em;
-    border-radius: 25px;
+    border-radius: 1.4em;
     background: #F2F2F2 ;
 }
 
@@ -508,7 +510,7 @@ article a{
     background: white ;
     padding:0.5em; 
     box-sizing: border-box;
-    box-shadow: 0.1em 0.1em 0.5em 0.1em grey;
+    box-shadow: 0.1em 0.1em 0.3em 0.1em grey;
 }
 
 .HebergementFigure figcaption{
@@ -571,7 +573,7 @@ article a{
     margin-top:0;
     padding-top:0;
     padding-left: 1.4em;
-    font-size: 1.8em;  
+    font-size: 1.6em;  
     font-weight: bold;    
 }
 
@@ -606,34 +608,28 @@ article a{
 
 aside{
     width:27%;
-    min-width: 250px;
+    /* min-width: 250px; */ 
     height:100%;
-    border-radius: 0.9em;
+    border-radius: 1.4em;
     background: #F2F2F2 ;
     padding-bottom: 2%;
-  
 }
 
 #PopulaireHeader{
     display:flex;
     flex-direction:row;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items:center;    
-    margin:0;
+    margin:0.7em 1.5em 0 0.85em;
+    font-size: 1.8em;
+    font-weight: bold;  
 }
 
 
 
-#PopulaireHeader h3{ 
-    font-size: 2em;
-    font-weight: bold;
-}
-
-#PopulaireHeader i{
-    font-size: 2.8em;
-    margin-bottom: 0.2em;
-    font-weight: bold;
-}
+/* #PopulaireHeader i{  
+    margin-bottom: 0.2em;    
+} */
 
 #PopulaireContenu{
     display:flex;
@@ -664,7 +660,7 @@ aside{
     justify-content:start;
     border-radius: 0.9em;
     background: white ;
-    box-shadow: 0.1em 0.1em 0.5em 0.1em grey;
+    box-shadow: 0.1em 0.1em 0.3em 0.1em grey;
 }
 
 .PopulaireImg{
@@ -744,9 +740,9 @@ ACTIVITES
 }
 
 
-#ActiviteHeader h3{
+#ActiviteHeader {
     font-weight: bold;
-    font-size: 2.8em;
+    font-size: 2em;
 }
 
 #ActiviteContenu
@@ -756,82 +752,83 @@ ACTIVITES
     justify-content: space-between;
     flex-wrap: wrap;
     width:100%;
-    height:30vw;
+    height:29vw;
     margin:0;
     padding:0;
 }
 
 
-.ActiviteArticlecourt{
-    height: 36%;
+.ActiviteArticle{
     width:22%;
     margin:0;
     padding:0;
-    box-shadow: 0.1em 0.1em 0.5em 0.1em grey;
-    border-radius: 2em;
-  
-
+    box-shadow: 0.1em 0.1em 0.3em 0.1em grey;
+    border-radius: 2em;  
 }
 
-.ActiviteArticlemoyen{
-    height: 56%;
-    width:22%;
-    margin:0;
-    padding:0;
-    box-shadow: 0.1em 0.1em 0.5em 0.1em grey;
-    border-radius: 2em; 
+.Taille1{
+    height: 53%; 
 }
 
-.ActiviteArticlelong
+.Taille2{
+    height: 37.2%;   
+}
+
+.Taille3{
+    height: 44%;   
+}
+
+.Taille4{
+    height: 47%;   
+}
+
+.Taille5
 {
     height: 100%;
-    width:22%;
-    margin:0;
-    padding:0;
-    box-shadow: 0.1em 0.1em 0.5em 0.1em grey;
-    border-radius: 2em;
+   
 }
 
-.ActiviteArticlelongFigure{
+.ActiviteArticleFigure{
     height:  100%;
     margin:0;
     padding:0;
 }
 
 
-.ActiviteArticlemoyenFigure{
-    height:  100%;
-    margin:0;
-    padding:0;
-}
-
-.ActiviteArticlecourtFigure{
-    height:  100%;
-    margin:0;
-    padding:0;
-}
 
 
  .ActiviteImg{
     margin:0;
     padding:0;  
     width:100%; 
-    object-fit: cover;
-    object-position: 50% 35%;
+    object-fit: cover; 
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;  
 }
 
-.ActiviteArticlecourtFigure .ActiviteImg{
-    height: 64%; 
+.Taille1 .ActiviteImg{
+    height: 76.6%; 
+    object-position: 50% 40%;
 }
 
-.ActiviteArticlemoyenFigure .ActiviteImg{
-    height: 78%; 
+.Taille2 .ActiviteImg{
+    height: 66.66%; 
+    object-position: 50% 25%;
 }
 
-.ActiviteArticlelongFigure .ActiviteImg{
+.Taille3 .ActiviteImg{
+    height: 71.8%; 
+    object-position: 50% 7%;
+}
+
+.Taille4 .ActiviteImg{
+    height: 73.5%; 
+    object-position: 50% 18%;
+}
+
+.Taille5 .ActiviteImg{
     height: 85%; 
+    object-position: 50% 20%; 
 }
 
 #Activites figcaption{
@@ -854,21 +851,31 @@ ACTIVITES
     #Activites{
         font-size: 1.8vw;
     }
+
+    #ActiviteHeader{
+        padding:0 2% 0 2%;
+    }
+
     #ActiviteContenu {
         height:100%;
         width:96%;
         padding:0 2% 0 2%;
     }
 
-    .ActiviteArticlecourt, .ActiviteArticlemoyen, .ActiviteArticlelong{
-        height: 40vw;
+    .ActiviteArticle{
+        height: 50vw;
         width:100%;
         margin-bottom:5%;
         padding:0;
     }
 
-    .ActiviteArticlecourtFigure .ActiviteImg, .ActiviteArticlemoyenFigure .ActiviteImg, .ActiviteArticlelongFigure .ActiviteImg{
-        height:75%;
+    .ActiviteArticleFigure {
+        height:95%;
+    }
+
+    .ActiviteArticle .ActiviteImg{
+        
+        object-position: 50% 50%;
     }
 }
 
