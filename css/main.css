@@ -137,6 +137,9 @@ body{
         border-bottom:4px solid #F2F2F2; 
         margin-top: 4em;
         margin-bottom: 2em;
+        margin-left:-0.5em;
+        margin-right:-0.5em;
+        padding-bottom: 0.4em;
     }
 
     .menuitem a
@@ -275,14 +278,18 @@ RECHERCHE
 
 #Filtretitre{
     width:5em;
-    font-size: 0.7em;
+    height:100%;
+
     font-weight: bold;   
     align-content: center;
+    height:3em;
+    margin-right: 1.5em;
 }
 
-#Filtretitre p{
-    margin:0;
+#Filtretitre p{    
+    margin-top: 0;
     font-size: 1.5em;
+   
 }
 
 #Filtres
@@ -446,8 +453,6 @@ article a{
     flex-direction: row;
     justify-content: space-between;  
     font-size: 0.8vw;
-    
-
 }
 
 @media (max-width: 768px) {
@@ -609,10 +614,11 @@ article a{
 aside{
     width:27%;
     /* min-width: 250px; */ 
-    height:100%;
+    height:fill;
     border-radius: 1.4em;
     background: #F2F2F2 ;
-    padding-bottom: 2%;
+    padding:0;
+    margin:0;
 }
 
 #PopulaireHeader{
@@ -627,9 +633,6 @@ aside{
 
 
 
-/* #PopulaireHeader i{  
-    margin-bottom: 0.2em;    
-} */
 
 #PopulaireContenu{
     display:flex;
@@ -638,7 +641,7 @@ aside{
     justify-content:space-between;
     margin:0;     
     width:100%;
-    height: 100%;
+    height: fill;
 }
 
 .PopulaireArticle{ 
@@ -767,11 +770,11 @@ ACTIVITES
 }
 
 .Taille1{
-    height: 53%; 
+    height: 52.9%; 
 }
 
 .Taille2{
-    height: 37.2%;   
+    height: 37.16%;   
 }
 
 .Taille3{
@@ -796,14 +799,15 @@ ACTIVITES
 
 
 
-
  .ActiviteImg{
     margin:0;
     padding:0;  
     width:100%; 
     object-fit: cover; 
     border-top-left-radius: 2em;
-    border-top-right-radius: 2em;  
+    border-top-right-radius: 2em; 
+    
+ 
 }
 
 .Taille1 .ActiviteImg{
@@ -827,22 +831,19 @@ ACTIVITES
 }
 
 .Taille5 .ActiviteImg{
-    height: 85%; 
+    height: 87.6%; 
     object-position: 50% 20%; 
 }
 
 #Activites figcaption{
-    height: auto;
-    display:flex;
-    flex-direction:column;
+    height: 3.6em;
 }
 
 #Activites h4{
     font-weight: bold;
     font-size: 1.7em;
+    margin-top:0.5em;
     padding-left:1.1em;
-    padding-top: 0.8em;
-    margin: 0;
 }
 
 
@@ -863,19 +864,33 @@ ACTIVITES
     }
 
     .ActiviteArticle{
-        height: 50vw;
+        
         width:100%;
         margin-bottom:5%;
         padding:0;
     }
 
+
     .ActiviteArticleFigure {
-        height:95%;
+        height: 50vw;
     }
 
     .ActiviteArticle .ActiviteImg{
-        
+        height:71%;
         object-position: 50% 50%;
+    }
+
+
+
+    #Activites figcaption{
+        height: auto;
+    }
+    
+    #Activites h4{
+        font-weight: bold;
+        font-size: 2.5em;
+        margin-top:0.9em;
+        padding-left:1.1em;
     }
 }
 
