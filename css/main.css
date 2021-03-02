@@ -160,19 +160,39 @@ body{
     }
 }
 
+
+@media (max-width: 768px) {
+
+    #FormulaireRecherche{
+        margin:2%;
+    }
+}
+
 /*#############
 SOUS TITRE
 #############*/
 
+
+#SousTitre{
+    font-size:2vw;
+}
+
+@media (max-width: 768px) {
+    #SousTitre{
+        font-size:5.5vw;
+        margin-top: 10%;
+    }
+}
+
 #SousTitre h1{
     margin: 0;
-    font-size:2.6em;  
+    font-size:1.1em;
     font-weight: 700;
     margin:5% 2% 0% 0%;
 }
 
 #SousTitre p{
-    font-size:2em; 
+    font-size:0.7em; 
     margin:0.5% 2% 2% 0%;
 }
 
@@ -209,6 +229,7 @@ RECHERCHE
     margin:0;
     padding-left:0.8em;
     font-size: 2em;
+    font-weight: bold;
     border: 1px solid #F2F2F2;
 }
 
@@ -283,11 +304,11 @@ RECHERCHE
     font-weight: bold;   
     align-content: center;
     height:3em;
-    margin-right: 1.5em;
+    margin: 0 1.5em 0 0;
 }
 
 #Filtretitre p{    
-    margin-top: 0;
+    margin: 0;
     font-size: 1.5em;
    
 }
@@ -368,18 +389,20 @@ RECHERCHE
     font-weight: bold;
     flex-wrap: nowrap;
     background-color: white;
+
+    cursor: pointer;
 }
 
 
 @media (max-width: 768px) {
     #FiltresGeneral {
         flex-direction: column;
-        font-size: 3.1vw;
+        font-size: 3vw;
         align-items:flex-start;
     }
 
     #Filtretitre{
-        margin-left: 0.8em;
+        margin-left: 0.3em;
         margin-bottom: 0.5em;
         font-size: 4vw;
     }
@@ -389,7 +412,7 @@ RECHERCHE
 
 #Nombreslogements{
     font-size:2em;
-    margin-bottom: 2.5em; 
+    margin:0 0 2.5em 0; 
     display: grid;
     grid-template-areas: "info nblogement";
     grid-template-rows: 100%;
@@ -401,26 +424,33 @@ RECHERCHE
 .fa-stack
 {
     vertical-align: middle;
-    margin:0;
+    margin:0 0 0 -12%;
+    padding:0;
     grid-area: info;
+    box-sizing: border-box;  
 }
 
 .fa-info{
+    margin:0;
     color:#0065FC
 }
 
 .fa-circle{
+    margin:0;
     color: #f2f2f2;  
 }
 
 
 #NombreslogementsText{
     grid-area: nblogement;
+    margin:0;
+    font-size:1em;
+    padding-top: 0.3em;
 }
 
 @media (max-width: 768px) {
     #Nombreslogements{
-        font-size:4vw;
+        font-size:3vw;
         margin-bottom: 2.5em;   
         
         grid-template-columns: 4em auto;
@@ -431,8 +461,8 @@ RECHERCHE
     }
 
     #NombreslogementsText{
-        font-size:1em;
-        padding-top: 0.3em;
+        font-size:1.3em;
+        padding-top: 0em;
     } 
 }
 
