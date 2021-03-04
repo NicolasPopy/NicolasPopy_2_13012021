@@ -38,6 +38,7 @@ body{
     #HeaderPage {
         height: 12em;
         padding:0;    
+        margin:0;
         font-size: 1.8vw;
 
         grid-template-columns: 50%  50%;
@@ -137,9 +138,10 @@ body{
         border-bottom:4px solid #F2F2F2; 
         margin-top: 4em;
         margin-bottom: 2em;
-        margin-left:-0.5em;
-        margin-right:-0.5em;
+      /*   margin-left:-0.5em;
+        margin-right:-0.5em; */
         padding-bottom: 0.4em;
+
     }
 
     .menuitem a
@@ -272,7 +274,7 @@ RECHERCHE
     #BoutonRechercher{
         border-top-left-radius: 0.7em;
         border-bottom-left-radius: 0.7em;
-        margin-left:-5%;
+  /*       margin-left:-5%; */
     }
 
     #BoutonRechercher span{
@@ -490,8 +492,8 @@ article a{
         flex-direction: column-reverse;
         justify-content: flex-start;  
         align-items: center;
-        margin: 0 -2%;
-        width:104%;
+        margin: 0;
+        width:100%;
     }
 }
 
@@ -507,6 +509,8 @@ article a{
     flex-direction:column;    
     width:70%; 
     height:100%;
+    margin:0;
+    box-sizing: border-box;  
 
     padding-left: 0.6em;
     border-radius: 1.4em;
@@ -619,6 +623,7 @@ article a{
         font-size: 2.5vw;
         background-color:white;
         border-radius:0;
+        margin:0;
     }
 
     #HebergementFooter{
@@ -752,6 +757,7 @@ aside{
         width:100%;
         font-size: 2.8vw;
         border-radius: 0;
+        margin:0;
         
     }
 
